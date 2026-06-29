@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Peine Vro</title>
+
+<style>
+
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
+    text-align:center;
+}
+
+h1{
+    margin-top:60px;
+    font-size:60px;
+    color:#00ffcc;
+}
+
+.sub{
+    font-size:22px;
+    color:#d8d8d8;
+    margin-bottom:35px;
+}
+
+.card{
+    width:320px;
+    max-width:90%;
+    margin:auto;
+    background:#1c1c1c;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 18px rgba(0,255,204,.18);
+}
+
+.estado{
+    font-size:18px;
+    color:#8cffc8;
+}
+
+.contador{
+    font-size:38px;
+    font-weight:bold;
+    color:#00ffcc;
+    margin-top:12px;
+}
+
+.texto{
+    margin-top:8px;
+    color:#bdbdbd;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 24px;
+    border:none;
+    border-radius:10px;
+    background:#00ffcc;
+    color:#111;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00ddb0;
+}
+
+img{
+    margin-top:40px;
+    width:230px;
+    max-width:85%;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(255,255,255,.12);
+}
+
+footer{
+    margin:40px;
+    color:#666;
+    font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>PEINE VRO 🪮</h1>
+
+<div class="sub">
+Peine auténtico del Oscar
+</div>
+
+<div class="card">
+
+<div class="estado">
+NFC detectado
+</div>
+
+<div class="contador">
+<span id="contador">0</span>
+</div>
+
+<div class="texto">
+Escaneos registrados
+</div>
+
+<button onclick="sumar()">
+Simular escaneo
+</button>
+
+</div>
+
+<!-- Reemplaza la URL de abajo por la URL de tu imagen -->
+
+<img src="PEGA_AQUI_LA_URL_DE_TU_IMAGEN" alt="Peine">
+
+<footer>
+© Peine Vro
+</footer>
+
+<script>
+
+let contador = 0;
+
+function sumar(){
+    contador++;
+    document.getElementById("contador").innerText = contador;
+}
+
+</script>
+
+</body>
+</html>
